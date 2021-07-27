@@ -1,0 +1,50 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+
+@import 'search-bar.scss';
+@import 'player-card.scss';
+@import 'loader.scss';
+
+body {
+    // background-color: #545454;
+    background-image: url('https://scontent.fmia1-1.fna.fbcdn.net/v/t1.6435-9/175657360_801269414130054_1287409740659683821_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=2c4854&_nc_ohc=sxhcPsBcY3gAX9rfUBS&_nc_ht=scontent.fmia1-1.fna&oh=2253c49d42f391a229a14418f1d73145&oe=60BC0145');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 125vh;
+}
+.navbar{
+    height: 50px
+}
+#header {
+    #header-text-main{
+        font-family: Rajdhani;
+    }
+    #header-logo {
+        height: 80px;
+        width: 80px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #D9292A;
+    }
+    .apex-icon {
+        fill: white;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        // height: 400px;
+        flex-direction: column;
+        text-align: center;
+        #header-logo {
+            margin: 0 0 2.5rem 0 !important;
+        }
+        #header-text-main {
+            font-size: 1.5rem;
+        }
+        #header-text-sub {
+            font-size: 1rem;
+        }
+    }
+  }
